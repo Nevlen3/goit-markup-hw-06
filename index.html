@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta name="viewport" charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- #start HEADER -->
+    <!-- #region HEADER <!-- ! HEADER -->
 
     <header class="header">
       <div class="container header-container">
@@ -57,22 +57,21 @@
       </div>
     </header>
 
-    <!-- #end HEADER -->
-
+    <!-- #endregion HEADER <!-- ? HEADER -->
     <main>
-      <!-- #start HERO -->
+      <!-- #region HERO <!-- ! HERO -->
 
-      <section class="hero">
+      <section class="hidden hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
         </div>
       </section>
 
-      <!-- #end HERO -->
-      <!-- #start FEATURES -->
+      <!-- #endregion HERO <!-- ? HERO -->
+      <!-- #region FEATURES <!-- ! FEATURES -->
 
-      <section class="features">
+      <section class="hidden features">
         <div class="container features-container">
           <h2 class="features-title visually-hidden">Features</h2>
           <ul class="features-list">
@@ -131,10 +130,10 @@
         </div>
       </section>
 
-      <!-- #end FEATURES -->
-      <!-- #start TEAM -->
+      <!-- #endregion FEATURES <!-- ? FEATURES -->
+      <!-- #region TEAM <!-- ! TEAM -->
 
-      <section class="team">
+      <section class="hidden team">
         <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -314,10 +313,10 @@
         </div>
       </section>
 
-      <!-- #end TEAM -->
-      <!-- #start PORTFOLIO -->
+      <!-- #endregion TEAM <!-- ? TEAM -->
+      <!-- #region PORTFOLIO <!-- ! PORTFOLIO -->
 
-      <section class="portfolio">
+      <section class="hidden portfolio">
         <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -426,10 +425,10 @@
         </div>
       </section>
 
-      <!-- #end PORTFOLIO -->
+      <!-- #endregion PORTFOLIO <!-- ? PORTFOLIO -->
     </main>
-    <!-- #start FOOTER -->
-    <footer class="footer">
+    <!-- #region FOOTER <!-- ! FOOTER -->
+    <footer class="hidden footer">
       <div class="container footer-container">
         <div class="footer-one">
           <a class="logo footer-logo" href="./index.html"
@@ -497,11 +496,10 @@
         </div>
       </div>
     </footer>
-    <!-- #end FOOTER -->
+    <!-- #endregion FOOTER <!-- ? FOOTER -->
+    <!-- #region OVERLAY <!-- ! OVERLAY -->
 
-    <!-- #region OVERLAY -->
-
-    <div class="backdrop is-open">
+    <div class="hidden backdrop is-open">
       <div class="modal">
         <button class="icon-close-overlay" type="button">
           <svg class="svg-close-overlay" width="8" height="8">
@@ -588,7 +586,7 @@
         </form>
       </div>
     </div>
-    <!-- #endregin OVERLAY -->
+    <!-- #endregion OVERLAY <!-- ? OVERLAY -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
