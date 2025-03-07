@@ -54,15 +54,15 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
         <!-- TODO ------MOBILE MENU -->
-        <div class="mobile-menu is-open">
+        <div class="mobile-menu" data-menu>
           <div class="container mobile-menu-container">
-            <button class="mobile-menu-close" type="button">
+            <button class="mobile-menu-close" type="button" data-menu-close>
               <svg class="svg-menu-close" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
@@ -137,17 +137,19 @@
     <main>
       <!-- #region HERO <!-- ! HERO -->
 
-      <section class="hidden hero">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
       <!-- #endregion HERO <!-- ? HERO -->
       <!-- #region FEATURES <!-- ! FEATURES -->
 
-      <section class="hidden features">
+      <section class="features">
         <div class="container features-container">
           <h2 class="features-title visually-hidden">Features</h2>
           <ul class="features-list">
@@ -209,7 +211,7 @@
       <!-- #endregion FEATURES <!-- ? FEATURES -->
       <!-- #region TEAM <!-- ! TEAM -->
 
-      <section class="hidden team">
+      <section class="team">
         <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -392,7 +394,7 @@
       <!-- #endregion TEAM <!-- ? TEAM -->
       <!-- #region PORTFOLIO <!-- ! PORTFOLIO -->
 
-      <section class="hidden portfolio">
+      <section class="portfolio">
         <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -504,7 +506,7 @@
       <!-- #endregion PORTFOLIO <!-- ? PORTFOLIO -->
     </main>
     <!-- #region FOOTER <!-- ! FOOTER -->
-    <footer class="hidden footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-one">
           <a class="logo footer-logo" href="./index.html"
@@ -562,7 +564,11 @@
               />
             </label>
 
-            <button class="footer-button-conteiner" type="submit">
+            <button
+              class="footer-button-conteiner"
+              type="submit"
+              data-modal-open
+            >
               Subscribe
               <svg class="footer-icon-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -575,9 +581,9 @@
     <!-- #endregion FOOTER <!-- ? FOOTER -->
     <!-- #region OVERLAY <!-- ! OVERLAY -->
 
-    <div class="hidden backdrop is-open">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="icon-close-overlay" type="button">
+        <button class="icon-close-overlay" type="button" data-modal-close>
           <svg class="svg-close-overlay" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -664,5 +670,6 @@
     </div>
     <!-- #endregion OVERLAY <!-- ? OVERLAY -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
